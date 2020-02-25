@@ -207,3 +207,32 @@ noforce sim:/e8_3encoder/output
 run
 run
 quit -sim
+# Load canceled
+vsim work.e16_4edecoder
+# vsim 
+# Start time: 01:53:38 on Feb 26,2020
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/Modeltech_pe_edu_10.4a/examples/work.e16_4edecoder' has no architecture.
+# 
+# Error loading design
+vsim work.e8_3encoder
+# vsim 
+# Start time: 01:54:53 on Feb 26,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.e8_3encoder(behv)
+add wave -r /*
+force -freeze sim:/e8_3encoder/input 00000010 0
+run
+run
+run
+run
+force -freeze sim:/e8_3encoder/input 8'h11 0
+run
+run
+force -freeze sim:/e8_3encoder/input 8'h1 0
+run
+run
+# Break key hit
+quit -sim
