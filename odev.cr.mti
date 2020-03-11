@@ -1,12 +1,4 @@
-C:/Modeltech_pe_edu_10.4a/examples/4-16Decoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/4-16Decoder.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity E4_16decoder
--- Compiling architecture Behv of E4_16decoder
-
-} {} {}} C:/Modeltech_pe_edu_10.4a/examples/3-8Decoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/3-8Decoder.vhd
+C:/Modeltech_pe_edu_10.4a/examples/3-8Decoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/3-8Decoder.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -14,13 +6,13 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity E3_8decoder
 -- Compiling architecture Behv of E3_8decoder
 
-} {} {}} C:/Modeltech_pe_edu_10.4a/examples/8-3Encoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/8-3Encoder.vhd
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/4-16Decoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/4-16Decoder.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity E8_3encoder
--- Compiling architecture Behv of E8_3encoder
+-- Compiling entity E4_16decoder
+-- Compiling architecture Behv of E4_16decoder
 
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/16-4Encoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/16-4Encoder.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -29,5 +21,13 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package std_logic_1164
 -- Compiling entity E16_4encoder
 -- Compiling architecture Behv of E16_4encoder
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/8-3Encoder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/8-3Encoder.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity E8_3encoder
+-- Compiling architecture Behv of E8_3encoder
 
 } {} {}}

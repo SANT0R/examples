@@ -1,13 +1,20 @@
 
-Encoder - Decoder Nedir? Endüstride, haberleşmede, bilgisayarda ve daha birçok yerde dijital elektronik kullanılır.
+GİRİŞ
+
+Bu projede encoder ve decoder kombinasyonel devreleri incelenmiş ve ModelSim uygulaması yardımı ile simüle edilmiştir.
+
+
+Encoder - Decoder Nedir? 
+
+Endüstride, haberleşmede, bilgisayarda ve daha birçok yerde dijital elektronik kullanılır.
 Elektronik sistemlerde, çiplerin içerisinde mantık devreleri bulunmaktadır.
 Bu mantık devrelerinde en basitinden kodlayıcı ve kod çözücülerle işlemler yapılır. 
  
  
  
- 
- 
-Kodlayıcı Devreler Kodlayıcı, sayısal bir bilginin, başka bir sayısal bilgiye dönüştürülmesi için kullanılan lojik bir devredir.
+Kodlayıcı Devreler 
+
+Kodlayıcı, sayısal bir bilginin, başka bir sayısal bilgiye dönüştürülmesi için kullanılan lojik bir devredir.
 Örneğin, desimal (onluk) sayı sisteminde girilen sayısal bilgileri, binary (ikili) sayı sistemlerine dönüştürür.
 Alfanümerik tuş takımlarında ve klavyede kodlayıcı devreler kullanılır.   
  
@@ -16,15 +23,18 @@ Decimal – BCD kodlayıcı 10’luk sayı sisteminde ki kodları, bcd (ikili sa
  
  
  
-Kod Çözücü Devreler Kod çözücü(decoder), kodlayıcının tersi işlem yapar.
+Kod Çözücü Devreler 
+
+Kod çözücü(decoder), kodlayıcının tersi işlem yapar.
 Kodlanmış bilgileri anlaşılır hale dönüştürmek için kullanılır.
 Örneğin cep telefonumuza gelen mesajları 2’lik sayı sisteminde anlayamayız.
 Gelen bilgiler çözümlenerek metin formatı haline getirilir. Bilgisayarda anakart, diğer mikroişlemcilerde adresleme amacıyla kullanılır. 
  
  
  
-Kod Çözücü Tasarımı Kod çözücü tasarlarken n tane giriş varsa 2n tane çıkış vardır. 
- 
+Kod Çözücü Tasarımı
+
+Kod çözücü tasarlarken n tane giriş varsa 2n tane çıkış vardır.  
 Kodlayıcı ve Kod Çözücü Entegreler Entegreler devre tasarımını daha kolay ve düşük maliyetli hale getirmektedir. Kodlayıcı ve kod çözücü tasarlarken çeşitli devre elemanları kullanmaktansa tümleşik entegreler tercih edilir. TTL, CMOS gibi entegre türleri çoğunlukla kullanılır. 
  
 Kodlayıcı entegreler 
