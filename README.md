@@ -1,19 +1,20 @@
 
 
-![](/imgs/logo.jpg)
-#SAYISAL TASARIM LABORATUVARI PROJE RAPORU
-		#DECODER VE ENCODER
+![SAYISAL TASARIM LABORATUVARI PROJE RAPORU DECODER VE ENCODER](/imgs/logo.jpg)
 
+
+
+	
 Mehmet SANTOR
 330081-1.öğretim
 
 
-#GİRİŞ
+# GİRİŞ
 
 Bu projede encoder ve decoder kombinasyonel devreleri incelenmiş ve ModelSim uygulaması yardımı ile simüle edilmiştir.
 
 
-#Encoder - Decoder Nedir? 
+# Encoder - Decoder Nedir? 
 
 Endüstride, haberleşmede, bilgisayarda ve daha birçok yerde dijital elektronik kullanılır.
 Elektronik sistemlerde, çiplerin içerisinde mantık devreleri bulunmaktadır.
@@ -21,7 +22,7 @@ Bu mantık devrelerinde en basitinden kodlayıcı ve kod çözücülerle işleml
  ![](/imgs/1.jpg)
  
  
-#Kodlayıcı Devreler 
+# Kodlayıcı Devreler 
 
 Kodlayıcı, sayısal bir bilginin, başka bir sayısal bilgiye dönüştürülmesi için kullanılan lojik bir devredir.
 Örneğin, desimal (onluk) sayı sisteminde girilen sayısal bilgileri, binary (ikili) sayı sistemlerine dönüştürür.
@@ -29,7 +30,7 @@ Alfanümerik tuş takımlarında ve klavyede kodlayıcı devreler kullanılır.
  ![Kodlayıcı Blok şeması](/imgs/2.jpg)
 
 
-#Kodlayıcı Tasarımı
+# Kodlayıcı Tasarımı
 Kodlayıcı tasarlarken giriş sayısını belirlememiz lazım. Bu girişleri kodlayabilecek minimum çıkış sayısını hesaplarız.
  12 adet giriş kodlanması gerekiyorsa 2n > 12 formülü yardımıyla n’nin değerinin 4 olduğunu ve devrede 4 tane çıkış olması gerektiğini buluruz.
  Doğruluk tablosunu oluşturup, devrenin tasarımına geçilir.
@@ -53,12 +54,12 @@ Y=D3+D1
 
 
 
-#Decimal – BCD kodlayıcı 
+# Decimal – BCD kodlayıcı 
 10’luk sayı sisteminde ki kodları, bcd (ikili sayı sistemi ) koduna dönüştürür. 
  ![Decimal-BCD Doğruluk tablosu	](/imgs/5.jpg)
  
  
-#Kod Çözücü Devreler 
+# Kod Çözücü Devreler 
 
 Kod çözücü(decoder), kodlayıcının tersi işlem yapar.
 Kodlanmış bilgileri anlaşılır hale dönüştürmek için kullanılır.
@@ -67,7 +68,7 @@ Gelen bilgiler çözümlenerek metin formatı haline getirilir. Bilgisayarda ana
   ![Kod çözücü blok diyagram](/imgs/6.jpg)
  
  
-#Kod Çözücü Tasarımı
+# Kod Çözücü Tasarımı
 
 Kod çözücü tasarlarken n tane giriş varsa 2n tane çıkış vardır.  
 Kodlayıcı ve Kod Çözücü Entegreler Entegreler devre tasarımını daha kolay ve düşük maliyetli hale getirmektedir.
@@ -82,25 +83,25 @@ Y3=AB
  ![2x4 tasarlanmış decoder](/imgs/7.jpg)
   
 
-#Simüle Edilen Devreler
+# Simüle Edilen Devreler
 
--8:3 ENCODER
+# - 8:3 ENCODER
 ![Blok diyagram ve doğruluk tablosu](/imgs/8.jpg)
 
--16:4 ENCODER
+# - 16:4 ENCODER
 ![Blok diyagram](/imgs/9.jpg)
 ![Doğruluk tablosu](/imgs/10.jpg)
 
--3:8 DECODER
+# - 3:8 DECODER
 ![Blok diyagram ve doğruluk tablosu](/imgs/11.jpg)
 
--4:16 DECODER
+# - 4:16 DECODER
 ![Blok diyagram ve doğruluk tablosu](/imgs/12.jpg)
 
-#Kodlayıcı entegreler 
+# Kodlayıcı entegreler 
  
  
--74LS147 
+# - 74LS147 
  
 Desimal – BCD kodlama için kullanılır. Klavye kodlama ve seçme işlemleri için uygundur. 
  ![74LS147 entegresi ve bacak isimleri](/imgs/13.jpg)
@@ -115,7 +116,7 @@ Eğer ki çıkış aktif olduğunda değeri lojik 0 oluyorsa buna aktif 0 (Activ
  
  
  
--74LS148 
+# - 74LS148 
  
 Octal – BCD kodlama için kullanılır. 74148 entegresi 8 giriş 3 çıkış öncelikli kodlayıcıdır.
 Bu entegre için, Bu entegrenin girişleri değillenmiştir. Yani girişleri aktif etmek için lojik 0 verilmelidir.
@@ -124,9 +125,9 @@ Bu entegrenin 8 girişi(G0 – G7) ve bir kontrol ucu(Ein) vardır. Ein=1 olduğ
  ![74LS148 doğruluk tablosu](/imgs/16.jpg)
  
  
-#Kod çözücü entegreler 
+# Kod çözücü entegreler 
  
--74LS138 
+# - 74LS138 
  
 74LS138 kod çözücü entegresi hafıza sistemlerinde entegre seçiminde ve benzer amaçlarla diğer elektronik devrelerde kullanılır.
 Demultiplexer elemanı olarak da kullanılabilmektedir. 
@@ -134,7 +135,7 @@ Demultiplexer elemanı olarak da kullanılabilmektedir.
  
  
  
--74LS47 ve 7 segment display 
+# - 74LS47 ve 7 segment display 
   ![74LS47 Decoder entegresi](/imgs/18.jpg)
   ![](/imgs/19.jpg)
  
@@ -157,7 +158,7 @@ Elde edilen bu dijital darbeler sayılarak ya da bit şeklinde okunarak hareketi
 
 
 
-#KAYNAKÇA: 
+# KAYNAKÇA: 
 - https://www.coursehero.com/tutors-problems/Computer-Science/9973001-Please-refer-to-the-attachment-to-answer-this-question-This-question/
 - https://www.elektrikport.com/teknik-kutuphane/encoder--decoder-nedir/16911#ad-image-0
  
