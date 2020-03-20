@@ -28,7 +28,7 @@ Kodlayıcı, sayısal bir bilginin, başka bir sayısal bilgiye dönüştürülm
 Örneğin, desimal (onluk) sayı sisteminde girilen sayısal bilgileri, binary (ikili) sayı sistemlerine dönüştürür.
 Alfanümerik tuş takımlarında ve klavyede kodlayıcı devreler kullanılır.   
  ![](/imgs/2.jpg)
-			## Kodlayıcı Blok şeması
+## Kodlayıcı Blok şeması
 
 # Kodlayıcı Tasarımı
 Kodlayıcı tasarlarken giriş sayısını belirlememiz lazım. Bu girişleri kodlayabilecek minimum çıkış sayısını hesaplarız.
