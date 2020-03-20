@@ -26,8 +26,9 @@ Bu mantık devrelerinde en basitinden kodlayıcı ve kod çözücülerle işleml
 
 Kodlayıcı, sayısal bir bilginin, başka bir sayısal bilgiye dönüştürülmesi için kullanılan lojik bir devredir.
 Örneğin, desimal (onluk) sayı sisteminde girilen sayısal bilgileri, binary (ikili) sayı sistemlerine dönüştürür.
-Alfanümerik tuş takımlarında ve klavyede kodlayıcı devreler kullanılır.   
- ![](/imgs/2.jpg)
+Alfanümerik tuş takımlarında ve klavyede kodlayıcı devreler kullanılır. 
+  
+![](/imgs/2.jpg)
 ### Kodlayıcı Blok şeması
 
 # Kodlayıcı Tasarımı
@@ -38,6 +39,7 @@ Kodlayıcı tasarlarken giriş sayısını belirlememiz lazım. Bu girişleri ko
 4 bitlik giriş kodlamak istersek;
 
 2^n>4 formülünden n=2
+
 ![](/imgs/3.jpg)
 ### 4x2 Encoder Doğruluk Tablosu
 
@@ -50,12 +52,14 @@ D3 girişi 1 olunca çıkış 11
 
 X=D2+D3
 Y=D3+D1
+
 ![](/imgs/4.jpg)
 ### 4X2 Encoder devresi
 
 
 # Decimal – BCD kodlayıcı 
 10’luk sayı sisteminde ki kodları, bcd (ikili sayı sistemi ) koduna dönüştürür. 
+
 ![](/imgs/5.jpg)
 ###  Decimal-BCD Doğruluk tablosu
  
@@ -65,6 +69,7 @@ Kod çözücü(decoder), kodlayıcının tersi işlem yapar.
 Kodlanmış bilgileri anlaşılır hale dönüştürmek için kullanılır.
 Örneğin cep telefonumuza gelen mesajları 2’lik sayı sisteminde anlayamayız.
 Gelen bilgiler çözümlenerek metin formatı haline getirilir. Bilgisayarda anakart, diğer mikroişlemcilerde adresleme amacıyla kullanılır. 
+
 ![](/imgs/6.jpg)
 ###  Kod çözücü blok diyagram
  
@@ -74,6 +79,7 @@ Kod çözücü tasarlarken n tane giriş varsa 2n tane çıkış vardır.
 Kodlayıcı ve Kod Çözücü Entegreler Entegreler devre tasarımını daha kolay ve düşük maliyetli hale getirmektedir.
 Kodlayıcı ve kod çözücü tasarlarken çeşitli devre elemanları kullanmaktansa tümleşik entegreler tercih edilir.
 TTL, CMOS gibi entegre türleri çoğunlukla kullanılır. 
+
 ![](/imgs/7.jpg)
 ### 2x4 decoder doğruluk tablosu
 
@@ -81,26 +87,32 @@ Y0= ¯AB
 Y1=¯AB
 Y2=A¯B
 Y3=AB
+
 ![](/imgs/8.jpg)
 ###   2x4 tasarlanmış decoder
 
 # Simüle Edilen Devreler
 
 # - 8:3 ENCODER
+
 ![](/imgs/9.jpg)
 ### Blok diyagram ve doğruluk tablosu
 
 # - 16:4 ENCODER
+
 ![](/imgs/10.jpg)
 ### Blok diyagram
+
 ![](/imgs/11.jpg)
 ###Doğruluk tablosu 
 
 # - 3:8 DECODER
+
 ![](/imgs/12.jpg)
 ### Blok diyagram ve doğruluk tablosu
 
 # - 4:16 DECODER
+
 ![](/imgs/13.jpg)
 ### Blok diyagram ve doğruluk tablosu
 
@@ -110,6 +122,7 @@ Y3=AB
 # - 74LS147 
  
 Desimal – BCD kodlama için kullanılır. Klavye kodlama ve seçme işlemleri için uygundur. 
+
 ![](/imgs/14.jpg)
 ### 74LS147 entegresi ve bacak isimleri
  
@@ -119,6 +132,7 @@ Eğer ki çıkış aktif olduğunda değeri lojik 0 oluyorsa buna aktif 0 (Activ
 74LS147 entegresi giriş ve çıkışları aktif 0’dır. Yani girişin aktif olabilmesi için lojik 0 uygulanmalıdır, çıkış aktif olduğunda lojik 0 alınır. 
  
 74LS147 entegresi de öncelikli kodlayıcıdır, yüksek girişin önceliği vardır. En yüksek giriş 9. Giriştir. 
+
 ![](/imgs/15.jpg)
 ### 74LS147 doğruluk tablosu
  
@@ -128,6 +142,7 @@ Eğer ki çıkış aktif olduğunda değeri lojik 0 oluyorsa buna aktif 0 (Activ
 Octal – BCD kodlama için kullanılır. 74148 entegresi 8 giriş 3 çıkış öncelikli kodlayıcıdır.
 Bu entegre için, Bu entegrenin girişleri değillenmiştir. Yani girişleri aktif etmek için lojik 0 verilmelidir.
 Bu entegrenin 8 girişi(G0 – G7) ve bir kontrol ucu(Ein) vardır. Ein=1 olduğunda entegre pasif durumdadır. 
+
 ![](/imgs/16.jpg)
 ### 74148 entegresi
 
@@ -140,18 +155,22 @@ Bu entegrenin 8 girişi(G0 – G7) ve bir kontrol ucu(Ein) vardır. Ein=1 olduğ
  
 74LS138 kod çözücü entegresi hafıza sistemlerinde entegre seçiminde ve benzer amaçlarla diğer elektronik devrelerde kullanılır.
 Demultiplexer elemanı olarak da kullanılabilmektedir. 
+
 ![](/imgs/18.jpg)
  ### 74LS138 decoder entegresi ve bacak isimleri
  
  
 # - 74LS47 ve 7 segment display 
+
 ![](/imgs/19.jpg)
 ### 74LS47 Decoder entegresi
+
 ![](/imgs/20.jpg)
  
  
 Giriş değerlerine göre çıkışta elde edilen 7 ledli göstergeye uygun bilgiler görülmektedir.
 Entegre çıkışında 7 ledli gösterge değerlerini elde etmek için LT, RBI ve BI/RB0 uçlarının lojik-1’e bağlanması gereklidir. 
+
 ![](/imgs/21.jpg)
 ### Doğruluk tablosu
 
