@@ -29,8 +29,8 @@ Kodlayıcı, sayısal bir bilginin, başka bir sayısal bilgiye dönüştürülm
 Örneğin, desimal (onluk) sayı sisteminde girilen sayısal bilgileri, binary (ikili) sayı sistemlerine dönüştürür.
 Alfanümerik tuş takımlarında ve klavyede kodlayıcı devreler kullanılır. 
   
+### --- Kodlayıcı Blok şeması --- 
 ![](/imgs/2.jpg)
-### --- Kodlayıcı Blok şeması
 
 # Kodlayıcı Tasarımı
 Kodlayıcı tasarlarken giriş sayısını belirlememiz lazım. Bu girişleri kodlayabilecek minimum çıkış sayısını hesaplarız.
@@ -41,8 +41,8 @@ Kodlayıcı tasarlarken giriş sayısını belirlememiz lazım. Bu girişleri ko
 
 2^n>4 formülünden n=2
 
-![](/imgs/3.jpg)
 ### --- 4x2 Encoder Doğruluk Tablosu --- 
+![](/imgs/3.jpg)
 
 D0 girişi 1 olunca çıkış 00
 D1 girişi 1 olunca çıkış 01
@@ -55,15 +55,15 @@ X=D2+D3
 
 Y=D3+D1
 
-![](/imgs/4.jpg)
 ### --- 4X2 Encoder devresi ---
+![](/imgs/4.jpg)
 
 
 # Decimal – BCD kodlayıcı 
 10’luk sayı sisteminde ki kodları, bcd (ikili sayı sistemi ) koduna dönüştürür. 
 
-![](/imgs/5.jpg)
 ### --- Decimal-BCD Doğruluk tablosu --- 
+![](/imgs/5.jpg)
  
 # Kod Çözücü Devreler 
 
@@ -72,8 +72,8 @@ Kodlanmış bilgileri anlaşılır hale dönüştürmek için kullanılır.
 Örneğin cep telefonumuza gelen mesajları 2’lik sayı sisteminde anlayamayız.
 Gelen bilgiler çözümlenerek metin formatı haline getirilir. Bilgisayarda anakart, diğer mikroişlemcilerde adresleme amacıyla kullanılır. 
 
-![](/imgs/6.jpg)
 ### --- Kod çözücü blok diyagram --- 
+![](/imgs/6.jpg)
  
 # Kod Çözücü Tasarımı
 
@@ -82,8 +82,8 @@ Kodlayıcı ve Kod Çözücü Entegreler Entegreler devre tasarımını daha kol
 Kodlayıcı ve kod çözücü tasarlarken çeşitli devre elemanları kullanmaktansa tümleşik entegreler tercih edilir.
 TTL, CMOS gibi entegre türleri çoğunlukla kullanılır. 
 
-![](/imgs/7.jpg)
 ### --- 2x4 decoder doğruluk tablosu --- 
+![](/imgs/7.jpg)
 
 Y0= ¯AB
 
@@ -93,33 +93,33 @@ Y2=A¯B
 
 Y3=AB
 
-![](/imgs/8.jpg)
 ### --- 2x4 tasarlanmış decoder --- 
+![](/imgs/8.jpg)
 
 # Simüle Edilen Devreler
 
 ## - 8:3 ENCODER
 
+### --- Blok diyagram ve doğruluk tablosu --- 
 ![](/imgs/9.jpg)
-### --- Blok diyagram ve doğruluk tablosu
 
 ## - 16:4 ENCODER
 
-![](/imgs/10.jpg)
 ### --- Blok diyagram --- 
+![](/imgs/10.jpg)
 
-![](/imgs/11.jpg)
 ### --- Doğruluk tablosu  --- 
+![](/imgs/11.jpg)
 
 ## - 3:8 DECODER
 
-![](/imgs/12.jpg)
 ### --- Blok diyagram ve doğruluk tablosu --- 
+![](/imgs/12.jpg)
 
 ## - 4:16 DECODER
 
-![](/imgs/13.jpg)
 ### --- Blok diyagram ve doğruluk tablosu --- 
+![](/imgs/13.jpg)
 
 # Kodlayıcı entegreler 
  
@@ -128,8 +128,8 @@ Y3=AB
  
 Desimal – BCD kodlama için kullanılır. Klavye kodlama ve seçme işlemleri için uygundur. 
 
-![](/imgs/14.jpg)
-### --- 74LS147 entegresi ve bacak isimleri --- 
+### --- 74LS147 entegresi ve bacak isimleri ---
+![](/imgs/14.jpg) 
  
 Normal koşullarda çıkış aktif olduğunda değeri lojik 1 olması gerekir. Bu çıkışa aktif 1 (Active High) adı verilir.
 Eğer ki çıkış aktif olduğunda değeri lojik 0 oluyorsa buna aktif 0 (Active Low) adı verilir. 
@@ -138,8 +138,8 @@ Eğer ki çıkış aktif olduğunda değeri lojik 0 oluyorsa buna aktif 0 (Activ
  
 74LS147 entegresi de öncelikli kodlayıcıdır, yüksek girişin önceliği vardır. En yüksek giriş 9. Giriştir. 
 
-![](/imgs/15.jpg)
 ### --- 74LS147 doğruluk tablosu --- 
+![](/imgs/15.jpg)
 
  
 ## - 74LS148 
@@ -148,11 +148,11 @@ Octal – BCD kodlama için kullanılır. 74148 entegresi 8 giriş 3 çıkış �
 Bu entegre için, Bu entegrenin girişleri değillenmiştir. Yani girişleri aktif etmek için lojik 0 verilmelidir.
 Bu entegrenin 8 girişi(G0 – G7) ve bir kontrol ucu(Ein) vardır. Ein=1 olduğunda entegre pasif durumdadır. 
 
-![](/imgs/16.jpg)
 ### --- 74148 entegresi --- 
+![](/imgs/16.jpg)
 
-![](/imgs/17.jpg)
-### --- 74LS148 doğruluk tablosu --- 
+### --- 74LS148 doğruluk tablosu ---
+![](/imgs/17.jpg) 
  
 # Kod çözücü entegreler 
  
@@ -161,14 +161,14 @@ Bu entegrenin 8 girişi(G0 – G7) ve bir kontrol ucu(Ein) vardır. Ein=1 olduğ
 74LS138 kod çözücü entegresi hafıza sistemlerinde entegre seçiminde ve benzer amaçlarla diğer elektronik devrelerde kullanılır.
 Demultiplexer elemanı olarak da kullanılabilmektedir. 
 
-![](/imgs/18.jpg)
-### --- 74LS138 decoder entegresi ve bacak isimleri --- 
+### --- 74LS138 decoder entegresi ve bacak isimleri ---
+![](/imgs/18.jpg) 
  
  
 ## - 74LS47 ve 7 segment display 
 
-![](/imgs/19.jpg)
 ### --- 74LS47 Decoder entegresi --- 
+![](/imgs/19.jpg)
 
 ![](/imgs/20.jpg)
  
@@ -176,14 +176,14 @@ Demultiplexer elemanı olarak da kullanılabilmektedir.
 Giriş değerlerine göre çıkışta elde edilen 7 ledli göstergeye uygun bilgiler görülmektedir.
 Entegre çıkışında 7 ledli gösterge değerlerini elde etmek için LT, RBI ve BI/RB0 uçlarının lojik-1’e bağlanması gereklidir. 
 
-![](/imgs/21.jpg)
 ### --- Doğruluk tablosu --- 
+![](/imgs/21.jpg)
 
-![](/imgs/22.jpg)
 ### --- 7447 İSİS çizimi --- 
+![](/imgs/22.jpg)
 
-![](/imgs/23.jpg)
 ### --- 7 segment display çıkışı --- 
+![](/imgs/23.jpg)
  
  
 Encoder ve decoder kullanım alanları Kod çözücü (decoder) ile bir kodlayıcı (encoder) arka arkaya bağlanırsa, 
