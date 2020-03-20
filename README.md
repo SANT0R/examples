@@ -1,7 +1,7 @@
 
 
-![SAYISAL TASARIM LABORATUVARI PROJE RAPORU DECODER VE ENCODER](/imgs/logo.jpg)
-
+![](/imgs/logo.jpg)
+# SAYISAL TASARIM LABORATUVARI PROJE RAPORU DECODER VE ENCODER
 
 
 	
@@ -27,8 +27,8 @@ Bu mantık devrelerinde en basitinden kodlayıcı ve kod çözücülerle işleml
 Kodlayıcı, sayısal bir bilginin, başka bir sayısal bilgiye dönüştürülmesi için kullanılan lojik bir devredir.
 Örneğin, desimal (onluk) sayı sisteminde girilen sayısal bilgileri, binary (ikili) sayı sistemlerine dönüştürür.
 Alfanümerik tuş takımlarında ve klavyede kodlayıcı devreler kullanılır.   
- ![Kodlayıcı Blok şeması](/imgs/2.jpg)
-
+ ![](/imgs/2.jpg)
+			## Kodlayıcı Blok şeması
 
 # Kodlayıcı Tasarımı
 Kodlayıcı tasarlarken giriş sayısını belirlememiz lazım. Bu girişleri kodlayabilecek minimum çıkış sayısını hesaplarız.
